@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=1.0">
+    <title>General Generic's Music Emporeum</title>
+    <link rel="shortcut icon" type="image/png" href="https://www.clipartkey.com/mpngs/m/192-1929759_slight-smile-emoji.png"/>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/body.css">
+    <link rel="stylesheet" href="../CSS/popup.css">
+    <link rel="stylesheet" href="../CSS/specialHover.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <div class="logoHolder">
+        <div class="company">
+            <h1>
+                Da Music Stor
+            </h1>
+        </div>
+    </div>
+    <div class="midSection"></div>
+    <div class="cart">
+        <h2>About</h2>
+        <h2>Contact</h2>
+        <i class="fa fas fa-shopping-cart" id="viewCart"></i>
+    </div>
+</section>
+<section class="picbody">
+    <div class="pic"></div>
+    <div class="divider"></div>
+</section>
+
+<section class="body" id="body">
+    <div id="cart">
+        <h1 class="itemin">Items In Your Cart</h1>
+        <div id="cartItemsHere">
+
+        </div>
+    </div>
+
+    <div class="content" id="content">
+        <div id="appendHere">
+            <div id="destined"></div>
+            <div class="buttonsHolder">
+                <button id="closeX" v-on:click="closeThing()">CLOSE PRODUCT VIEW</button>
+                <button id="addToCart" v-on:click="addToCart()">ADD TO CART</button>
+            </div>
+        </div>
+        <form id="instrument-list">
+            <div class="inner" v-for="items in instruments">
+                <div class="instrumentCard" v-bind:id="items.name" v-on:mouseenter="instrHov(items.brand)" v-on:mouseleave="instrLea(items.brand)">
+                    <div class="cardImage" v-on:click="popmeup(items.name,items.type, items.price, items.brand, items.pic, items.color)"><img :src="items.pic"></div>
+                    <div class="bottomHolder">
+                        <h1>{{items.name}}</h1>
+                        <h1>{{items.price}}</h1>
+                    </div>
+                    <button id="alsoAdd" v-on:click="alsoAdd(items.name,items.type, items.price, items.brand, items.pic, items.color)" type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="instrumentCard" id="newitem" v-on:click="addItem">
+                    <img class="add" src="https://cdn-icons-png.flaticon.com/512/32/32339.png" alt="">
+                    <h1>Add New Item</h1>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="../JS/app.js"></script>
+</body>
+</html>
