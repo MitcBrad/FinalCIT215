@@ -1,0 +1,60 @@
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #6d7cff;
+    height: 7%;
+    z-index: 1;
+}
+.logoHolder{
+    height: 100%;
+    /*background-color: greenyellow;*/
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.company{
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 65%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.header h1{
+    font-size: 32px;
+    font-family: "Lucida Handwriting";
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.midSection{
+    width: 65%;
+    height: 100%;
+}
+.cart{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    /*background-color: yellow;*/
+    align-items:  center;
+    justify-content: space-evenly;
+}
+.cart h2{
+    font-family: arial;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 25px;
+}
+
+i:before{
+    color: white;
+    margin: 0 auto;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.divider{
+    height: 3px;
+    background-color: #5d5d5d;
+}
+

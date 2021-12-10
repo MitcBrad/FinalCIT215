@@ -1,0 +1,21 @@
+.fenderhover{
+    background: linear-gradient(45deg, #ff0751, #ff0389, #ef0290, #ff006b);
+    background-size: 400% 100%;
+    -webkit-animation: Gradient 2s ease infinite;
+    -moz-animation: Gradient 2s ease infinite;
+    animation: Gradient 2s ease infinite;
+}
+.yamahahover{
+    background: linear-gradient(45deg, #177000, #74ff3c, #5aff00, #007552);
+    background-size: 300% 100%;
+    -webkit-animation: Gradient 2s ease infinite;
+    -moz-animation: Gradient 2s ease infinite;
+    animation: Gradient 2s ease infinite;
+}
+.matonhover{
+    background: linear-gradient(45deg, #001894, #00a6ff, #507dff, #56009d);
+    background-size: 300% 100%;
+    -webkit-animation: Gradient 2s ease infinite;
+    -moz-animation: Gradient 2s ease infinite;
+    animation: Gradient 2s ease infinite;
+}

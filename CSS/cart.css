@@ -1,0 +1,38 @@
+#cart{
+    position: absolute;
+    margin: 0 auto;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    right: 0;
+    top: 10%;
+    border-radius: 20px;
+}
+#cartItemsHere{
+    height: 120px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #888888;
+    margin: 5px;
+}
+.cartItem{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.cartImage{
+    height: 120px;
+    width: 160px;
+    border: 3px solid black;
+
+}
+.itemin{
+    margin: 10px;
+    font-size: 80px;
+}
